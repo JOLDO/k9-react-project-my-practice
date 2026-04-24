@@ -17,5 +17,11 @@ export default defineConfig([
       globals: globals.browser,
       parserOptions: { ecmaFeatures: { jsx: true } },
     },
+    rules: {
+      "no-unused-vars": "warn",               // 변수 선언 후 안 쓰면 노란 줄로만
+      "react-hooks/exhaustive-deps": "warn", // 훅 의존성 배열 지적은 노란 줄로만
+      "react-refresh/only-export-components": "warn", // 리프레시 관련 지적도 경고로
+      "no-console": "warn",                  // 콘솔 로그쓰면 원래 빨간 밑줄 노란 줄로만
+    },
   },
 ])
