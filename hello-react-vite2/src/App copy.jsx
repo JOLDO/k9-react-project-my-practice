@@ -7,6 +7,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const name = '리액트';
+
   return (
     <>
       <section id="center">
@@ -17,6 +19,9 @@ function App() {
         </div>
         <div>
           <h1>Get started</h1>
+          <h2>오태흔 테스트</h2>
+          <h3>ㅎㅇㅎㅇ</h3>
+          <h1>{name}</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
