@@ -17,10 +17,15 @@ function App() {
     padding: 16,
   };
 
+  // return 외부의 공간에서 주석 예시 작성
+
   return (
     <>
       <h1>{name} 안녕!</h1>
       <h2>잘 작동하니?</h2>
+
+      <br></br>
+
       <p>JSX 안에서 자바스크립트 표현식을 통해 {} 안에 코드를 넣으면 됩니다.</p>
       <div>
         <p>If 문 대신 조건부 연산자 (삼항 연산자)</p>
@@ -31,17 +36,33 @@ function App() {
         )}
       </div>
 
+      <br></br>
+
       <div>
         <p>AND 연산자(&&)를 사용한 조건부 렌더링</p>
         {name2 === '리액트' && <h1>리액트입니다.</h1>}
       </div>
 
-      <div>
-        <p>undefined를 렌더링하지 않기</p>
-        {name3 || <h1>값이 undefined입니다.</h1>}
+      <br></br>
+
+      <p>undefined를 렌더링하지 않기</p>
+      <div>{name3 || <h1>값이 undefined입니다.</h1>}</div>
+
+      <br></br>
+
+      <p>인라인 스타일링</p>
+      <div style={style}>{name}</div>
+
+      <br></br>
+
+      <div
+        className="react"
+        // 태그 내부의 공간에서 주석 예시 작성
+      >
+        {name}
       </div>
 
-      <div style={style}>{name}</div>
+      {/* return 내부의 공간에서 주석 예시 작성 */}
     </>
   );
 }
