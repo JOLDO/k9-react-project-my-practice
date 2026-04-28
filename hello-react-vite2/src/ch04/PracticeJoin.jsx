@@ -1,6 +1,9 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const PracticeJoin = () => {
+  //함수형 컴포넌트에서는 ref를 사용하려면 hooks사용
+  const inputRef = useRef(null);
+
   const [form, setForm] = useState({
     username: '',
     email: '',
@@ -18,6 +21,7 @@ const PracticeJoin = () => {
   };
 
   const onClick = () => {
+    inputRef.current.focus();
     if (!username || !email || !pw || !pwConf) {
       alert('모든 값을 입력해주세요.');
       return;
@@ -38,6 +42,7 @@ const PracticeJoin = () => {
       <h3>password : {pw}</h3>
       <h3>passwordConfirm : {pwConf}</h3>
       <input
+        ref={inputRef}
         type="text"
         name="username"
         placeholder="이름!!!!"

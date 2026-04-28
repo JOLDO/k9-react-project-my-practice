@@ -186,3 +186,9 @@
 .react {
   color: red;
 }
+
+.no_dot {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
