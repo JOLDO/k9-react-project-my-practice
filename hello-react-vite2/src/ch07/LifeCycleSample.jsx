@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class LifeCycleSample extends Component {
   state = {
@@ -11,11 +11,13 @@ class LifeCycleSample extends Component {
   // 생명주기 시작, 마운트 1번
   constructor(props) {
     super(props);
-    console.log('constructor');
+    console.log('마운트 1번 , constructor');
   }
   // 생명주기 , 마운트 2번, 업데이트시에도 호출 1번
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log('getDerivedStateFromProps');
+    console.log(
+      '마운트 2번, 업데이트시에도 호출 1번, getDerivedStateFromProps',
+    );
     if (nextProps.color !== prevState.color) {
       return { color: nextProps.color };
     }
@@ -24,7 +26,7 @@ class LifeCycleSample extends Component {
 
   // 생명주기 , 마운트 4번
   componentDidMount() {
-    console.log('componentDidMount');
+    console.log('마운트 4번 , componentDidMount');
   }
 
   // 생명주기 , 업데이트  2번
@@ -65,7 +67,7 @@ class LifeCycleSample extends Component {
 
   // 생명주기 , 마운트 3번, 업데이트 3번
   render() {
-    console.log('render');
+    console.log(' 마운트 3번, 업데이트 3번 render');
     const style = {
       color: this.props.color,
     };
