@@ -1,0 +1,14 @@
+.box--primary {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 10px 10px 5px rgba(255, 0, 0, 0.5);
+    /* 안보여서 그림자 빨강으로 함ㅋㅋ */
+}
+
+.box__title--primary {
+    color: blue;
+}
+
+.box__content--primary {
+    color: gray;
+}

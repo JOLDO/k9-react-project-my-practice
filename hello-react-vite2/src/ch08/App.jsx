@@ -11,6 +11,14 @@ import Ex6 from './Ex6';
 import '../App.css';
 import Average from './Average';
 import Ex7 from './Ex7';
+import Average2 from './Average2';
+import Ex8 from './Ex8';
+import Average3 from './Average3';
+import Ex9 from './Ex9';
+import Ex10 from './Ex10';
+import Info2 from './Info2';
+import Ex11 from './Ex11';
+import Ex12 from './Ex12';
 
 const App = () => {
   //Ex4 에서, 언마운트 효과 내기를 위한 상태 추가.
@@ -78,6 +86,41 @@ const App = () => {
       <br />
       <h2>실습</h2>
       <Ex7 />
+
+      <br />
+      <hr />
+      <h2>useCallback 기본 예시 연습</h2>
+      <Average2></Average2>
+
+      <br />
+      <h2>실습</h2>
+      <Ex8 />
+
+      <br />
+      <hr />
+      <h2>useRef 기본 예시 연습</h2>
+      <Average3></Average3>
+
+      <br />
+      <h2>실습</h2>
+      <Ex9 />
+
+      <br />
+      <h2>실습</h2>
+      <Ex10 />
+
+      <br />
+      <hr />
+      <h2>customHooks 기본 예시 연습</h2>
+      <Info2 />
+
+      <br />
+      <h2>실습</h2>
+      <Ex11 />
+
+      <br />
+      <h2>실습</h2>
+      <Ex12 />
     </div>
   );
 };
