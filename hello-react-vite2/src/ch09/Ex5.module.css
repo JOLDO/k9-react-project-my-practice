@@ -1,0 +1,30 @@
+.badge {
+    display: inline-block;
+    padding: 0.2rem, 0.7rem;
+    /* 최대한 둥글게 */
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+
+    background-color: #373737;
+    line-height: 1;
+    /* 줄바꿈 방지 효과 */
+    white-space: nowrap;
+    /* 텍스트, 아이콘과 함깨 쓸때 정렬보정 */
+    vertical-align: middle;
+    /* 드래그 선택 방지 효과 */
+    user-select: none;
+}
+
+.success {
+    background-color: green;
+}
+
+.warning {
+    background-color: orange;
+}
+
+.error {
+    background-color: red;
+}

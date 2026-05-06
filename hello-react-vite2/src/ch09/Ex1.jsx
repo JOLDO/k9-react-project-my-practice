@@ -1,11 +1,11 @@
 import React from 'react';
-import './Ex1.css';
+import './Card.css';
 
-const Ex1 = () => {
+const Ex1 = ({ title, content }) => {
   return (
-    <div className="box--primary">
-      <h2 className="box__title--primary">h2 실습1 타이틀</h2>
-      <p className="box__content--primary">p 내용</p>
+    <div className="card">
+      <h2 className="card__title">{title}</h2>
+      <p className="card__content">{content}</p>
     </div>
   );
 };

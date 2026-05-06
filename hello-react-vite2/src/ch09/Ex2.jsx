@@ -1,11 +1,11 @@
 import React from 'react';
-import './Ex2.css';
+import './Button.css';
 
-const Ex2 = () => {
+const Ex2 = ({ children, onClick }) => {
   return (
-    <div>
-      <button className="button">실습2</button>
-    </div>
+    <button className="MyButton" onClick={onClick}>
+      {children}
+    </button>
   );
 };
 
