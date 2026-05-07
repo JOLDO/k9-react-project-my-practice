@@ -2,7 +2,7 @@
 import TodoListItem from "./TodoListItem";
 import "./TodoList.scss";
 
-const TodoList = ({ todos, onRemove, onToggle }) => (
+const TodoList = ({ todos, onRemove, onToggle, onUpdate }) => (
   <div className="TodoList">
     {todos.length !== 0 ? (
       todos.map((todo) => (
@@ -11,6 +11,7 @@ const TodoList = ({ todos, onRemove, onToggle }) => (
           key={todo.id} // 리스트 렌더링 시 반드시 고유한 key 필요
           onRemove={onRemove}
           onToggle={onToggle}
+          onUpdate={onUpdate}
         />
       ))
     ) : (
