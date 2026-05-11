@@ -1,5 +1,27 @@
 import { memo, useCallback, useState } from 'react';
 
+// 전
+// function TodoItem({ todo, onToggle }) {
+//   console.log('TodoItem 렌더:', todo.text);
+//   return (
+//     <li
+//       style={{
+//         padding: '8px 0',
+//         borderBottom: '1px solid #eee',
+//         display: 'flex',
+//         gap: 8,
+//         alignItems: 'center',
+//       }}
+//     >
+//       <span style={{ cursor: 'pointer' }} onClick={() => onToggle(todo.id)}>
+//         {todo.checked ? '✅' : '⬜'}
+//       </span>
+//       <span>{todo.text}</span>
+//     </li>
+//   );
+// }
+
+// 후
 // TODO: memo 적용하기
 const TodoItem = memo(function TodoItem({ todo, onToggle }) {
   console.log('TodoItem 렌더:', todo.text);
@@ -21,6 +43,19 @@ const TodoItem = memo(function TodoItem({ todo, onToggle }) {
   );
 });
 
+//전
+// function TodoList({ todos, onToggle }) {
+//   console.log('TodoList 렌더');
+//   return (
+//     <ul style={{ listStyle: 'none', padding: 0 }}>
+//       {todos.map((todo) => (
+//         <TodoItem key={todo.id} todo={todo} onToggle={onToggle} />
+//       ))}
+//     </ul>
+//   );
+// }
+
+// 후
 // TODO: memo 적용하기
 const TodoList = memo(function TodoList({ todos, onToggle }) {
   console.log('TodoList 렌더');
@@ -35,6 +70,7 @@ const TodoList = memo(function TodoList({ todos, onToggle }) {
 
 let nextId = 4;
 export default function App() {
+  console.log('Ex6 렌더');
   const [todos, setTodos] = useState([
     { id: 1, text: '리액트 공부', checked: false },
     { id: 2, text: '운동', checked: false },

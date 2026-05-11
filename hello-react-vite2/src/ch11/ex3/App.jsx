@@ -1,6 +1,8 @@
 import React, { useMemo, useState } from 'react';
 
 // TODO: 이 컴포넌트에 memo를 적용하세요
+// memo가 부모로부터 받는 props 비교만 최적화합니다.
+// 그래서, 컴포넌트 자신의 state가 바뀌면 리렌더합니다.
 
 // const Child = React.memo(function Child({ name }) {
 //   console.log('[Child] 렌더됨 — name:', name);

@@ -11,6 +11,8 @@ function createBulkTodos() {
 
 export default function App() {
   const [renderTick, setRenderTick] = useState(0);
+  // 전 : createBulkTodos() , 함수를 매번 실행하는 효과
+  // 후 : createBulkTodos , 함수 자체를 전달해서, lazy initializer
   const [todos, setTodos] = useState(createBulkTodos); // 🐛 버그!
 
   return (
