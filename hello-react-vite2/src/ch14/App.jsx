@@ -16,7 +16,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<NewsPage />} />
       <Route path="/:category" element={<NewsPage />} />
-      <Route path="/ex6" element={<Ex6 />} />
+      {/* <Route path="/ex6" element={<Ex6 />} /> */}
       {/* <Route path="/" element={<Ex5_resolve />} />
       <Route path="/:category" element={<Ex5_resolve />} /> */}
     </Routes>

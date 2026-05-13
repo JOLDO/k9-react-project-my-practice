@@ -9,6 +9,13 @@ const categories = [
   { name: 'science', text: '과학' },
   { name: 'sports', text: '스포츠' },
   { name: 'technology', text: '기술' },
+  { name: 'busanFood', text: '부산 맛집 서비스' },
+  { name: 'busanTour', text: '부산 관광 서비스' },
+  { name: 'busanTheme', text: '부산 테마 서비스' },
+  { name: 'car', text: '렌터카 서비스' },
+  { name: 'img', text: '부산 테마 서비스 이미지' },
+  { name: 'yugioh', text: '유희왕' },
+  { name: 'digimon', text: '디지몬' },
 ];
 
 const CategoriesBlock = styled.div`
